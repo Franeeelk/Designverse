@@ -3114,6 +3114,15 @@ input[type=date]:focus::-webkit-input-placeholder, input[type=email]:focus::-web
         margin-right: auto;
     }
 }
+@media (max-width: 768px) {
+    .vlt-animated-block {
+        animation: none; /* 禁用复杂动画 */
+    }
+    .vlt-section__ken-burn-background {
+        background-size: cover; /* 简化背景动画 */
+        animation: none;
+    }
+}
 /* 优化Ken Burn Effect */
 .vlt-section__ken-burn-background img {
     animation: kenBurnEffect 20s ease-in-out infinite; /* 减少动画频率 */
