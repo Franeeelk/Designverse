@@ -3145,3 +3145,8 @@ input[type=date]:focus::-webkit-input-placeholder, input[type=email]:focus::-web
     animation-iteration-count: 1; /* 限制动画只触发一次 */
     will-change: transform, opacity; /* 优化渲染 */
 }
+.vlt-animated-block {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    transition: all 0.3s ease-in-out; /* 平滑过渡 */
+}
