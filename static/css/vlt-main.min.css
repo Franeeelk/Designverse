@@ -3132,3 +3132,7 @@ input[type=date]:focus::-webkit-input-placeholder, input[type=email]:focus::-web
         transform: scale(1.05);
     }
 }
+.vlt-animated-block {
+    animation-iteration-count: 1; /* 限制动画只触发一次 */
+    will-change: transform, opacity; /* 优化渲染 */
+}
