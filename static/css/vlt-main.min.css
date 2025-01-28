@@ -3090,3 +3090,27 @@ input[type=date]:focus::-webkit-input-placeholder, input[type=email]:focus::-web
 .font-normal {
     font-family: DottedSongtiSquareRegular;
 }
+/* 避免对 GIF 元素使用额外的动画 */
+.gif-class {
+    animation: none !important;
+    transform: none !important;
+}
+.gif-container {
+    will-change: transform, opacity;
+}
+.vector {
+    position: relative; /* 确保它在文字底下 */
+    z-index: 1; /* 设置比文字更低的层级 */
+    margin-top: 30px; /* 控制 GIF 的垂直位置 */
+}
+
+/* 针对移动端的优化 */
+@media (max-width: 768px) {
+    .vector {
+        margin-top: 50px; /* 在移动端适当增加间距 */
+        width: 80%; /* 缩小 GIF 大小 */
+        display: block; /* 确保正常显示 */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
